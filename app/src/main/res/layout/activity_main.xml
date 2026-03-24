@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Sayı 1 -->
+    <EditText
+        android:id="@+id/edtSayi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1. Sayı"
+        android:inputType="numberDecimal"/>
+
+    <!-- Sayı 2 -->
+    <EditText
+        android:id="@+id/edtSayi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2. Sayı"
+        android:inputType="numberDecimal"/>
+
+    <!-- Sonuç -->
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonuç:"
+        android:textSize="20sp"
+        android:padding="16dp"/>
+
+    <!-- Butonlar -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <Button android:id="@+id/btnTopla" android:text="+" />
+        <Button android:id="@+id/btnCikar" android:text="-" />
+        <Button android:id="@+id/btnCarp" android:text="*" />
+        <Button android:id="@+id/btnBol" android:text="/" />
+
+        <Button android:id="@+id/btnKare" android:text="x²" />
+        <Button android:id="@+id/btnKarekok" android:text="√" />
+        <Button android:id="@+id/btnYuzde" android:text="%" />
+        <Button android:id="@+id/btnTers" android:text="1/x" />
+
+    </GridLayout>
+
+</LinearLayout>

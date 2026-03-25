@@ -1,53 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:id="@+id/main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center">
 
-    <!-- Sayı 1 -->
-    <EditText
-        android:id="@+id/edtSayi1"
+    <Button
+        android:id="@+id/btnBasla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UYGULAMAYI BAŞLAT" />
+
+    <LinearLayout
+        android:id="@+id/layoutSecim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="1. Sayı"
-        android:inputType="numberDecimal"/>
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
 
-    <!-- Sayı 2 -->
-    <EditText
-        android:id="@+id/edtSayi2"
+        <ImageView
+            android:id="@+id/imgRastgele"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button android:id="@+id/btnAnkara" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ANKARA" />
+        <Button android:id="@+id/btnIstanbul" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="İSTANBUL" />
+        <Button android:id="@+id/btnIzmir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="İZMİR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDetay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="2. Sayı"
-        android:inputType="numberDecimal"/>
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
 
-    <!-- Sonuç -->
-    <TextView
-        android:id="@+id/txtSonuc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sonuç:"
-        android:textSize="20sp"
-        android:padding="16dp"/>
-
-    <!-- Butonlar -->
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="4">
-
-        <Button android:id="@+id/btnTopla" android:text="+" />
-        <Button android:id="@+id/btnCikar" android:text="-" />
-        <Button android:id="@+id/btnCarp" android:text="*" />
-        <Button android:id="@+id/btnBol" android:text="/" />
-
-        <Button android:id="@+id/btnKare" android:text="x²" />
-        <Button android:id="@+id/btnKarekok" android:text="√" />
-        <Button android:id="@+id/btnYuzde" android:text="%" />
-        <Button android:id="@+id/btnTers" android:text="1/x" />
-
-    </GridLayout>
+        <TextView android:id="@+id/txtBaslik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" />
+        <ImageView android:id="@+id/detayImg1" android:layout_width="100dp" android:layout_height="100dp" />
+        <ImageView android:id="@+id/detayImg2" android:layout_width="100dp" android:layout_height="100dp" />
+        <ImageView android:id="@+id/detayImg3" android:layout_width="100dp" android:layout_height="100dp" />
+        <TextView android:id="@+id/txtAciklama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Açıklama burada görünecek." />
+        <Button android:id="@+id/btnGeri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GERİ DÖ" />
+    </LinearLayout>
 
 </LinearLayout>

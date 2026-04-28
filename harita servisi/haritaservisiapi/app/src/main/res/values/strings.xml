@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">haritaservisiapi</string>
+    <string name="app_title">Harita Servisi - API</string>
+    <string name="btn_current_location">Şimdiki Konum</string>
+    <string name="btn_set_location">Belirlenen Konum</string>
+</resources>

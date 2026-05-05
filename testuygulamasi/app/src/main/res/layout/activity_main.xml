@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Soru Yönetim Alanı -->
+        <EditText
+            android:id="@+id/etSoru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soru Yazın" />
+
+        <EditText
+            android:id="@+id/etA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A Şıkkı" />
+
+        <EditText
+            android:id="@+id/etB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B Şıkkı" />
+
+        <EditText
+            android:id="@+id/etC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C Şıkkı" />
+
+        <EditText
+            android:id="@+id/etDogru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doğru Şık (A, B veya C)" />
+
+        <Button
+            android:id="@+id/btnEkle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru Ekle" />
+
+        <Button
+            android:id="@+id/btnGuncelle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Güncelle (Soruya Göre)" />
+
+        <Button
+            android:id="@+id/btnSil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru Sil" />
+
+        <!-- Hata Veren Buton Düzenlendi: #white yerine @android:color/white kullanıldı -->
+        <Button
+            android:id="@+id/btnBasla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teste Başla"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"
+            android:layout_margin="20dp"/>
+
+        <!-- Test Ekranı Bölümü -->
+        <TextView
+            android:id="@+id/tvSoruGoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSecenekler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rbB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rbC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#F44336" />
+
+    </LinearLayout>
+</ScrollView>

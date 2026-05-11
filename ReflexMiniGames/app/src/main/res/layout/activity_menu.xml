@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oynamak İstediğiniz Oyunu Seçin"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardColorGame"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="#1E1E1E">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Renk Değişimi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/bestColorScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="👑 0"
+                    android:textColor="#4CAF50" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardButtonGame"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="#1E1E1E">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buton Refleks"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/bestButtonScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="👑 0"
+                    android:textColor="#3498DB" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMatchGame"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="#1E1E1E">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hafıza Eşleştirme"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Mod Seçmek İçin Dokun"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/layoutMatrixSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#252525"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/bestMatch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3x3 En İyi: 0"
+                android:textColor="#FFEB3B"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btn3x3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3x3 Modu Başlat"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/bestMatch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4x4 En İyi: 0"
+                android:textColor="#FFEB3B"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btn4x4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4x4 Modu Başlat"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/bestMatch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5x5 En İyi: 0"
+                android:textColor="#FFEB3B"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btn5x5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5x5 Modu Başlat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
